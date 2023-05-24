@@ -1,0 +1,129 @@
+body{
+    background: rgb(236,239,241);
+    margin: 0px;
+}
+h1{
+    justify-content: center;
+    display: flex;
+    font-weight: 100;
+    font-size: 35px;
+    font-family: "Roboto";
+}
+.blog-main{
+    display: flex;
+    width: fit-content;
+    height: max-content;
+    justify-content: space-around;
+}
+#add-blog-form{
+    margin: 35px;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#title-input{
+    width: 100%;
+    height: 3vmax;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: "Roboto";
+    border-bottom: 1px solid gray;
+}
+#content-input{
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: "Roboto";
+}
+#submit-btn{
+    width: 40%;
+    height: 2vmax;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: blue;
+    color: #FFF;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    left: 93px;
+    position: relative;
+    cursor: pointer;
+}
+#blog-container{
+    background: rgb(243, 242, 241);
+    font-family: "Roboto";
+}
+.blog{
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid gray;
+    height: fit-content;
+    font-family: "Roboto";
+}
+.delete-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 10%;
+    height: 2vmax;
+    border: none;
+    background: red;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 85px;
+    }
+    .blog-main{
+        display: flex;
+        width: fit-content;
+        height: max-content;
+        flex-direction: column;
+    }
+    #add-blog-form{
+        margin: 35px;
+        width: 70%;
+        align-items: center;
+        position: relative;
+        left: 72px;
+    }
+    #title-input{
+        height: 4vmax;
+    font-size: 32px;
+    }
+    #content-input{
+        font-size: 32px;
+    }
+    #submit-btn{
+        height: 4vmax;
+        left: 0px;
+        font-size: 32px;
+    }
+    #blog-container{
+        background: rgb(243, 242, 241);
+        font-family: "Roboto";
+    }
+    .blog{
+        font-size: 32px;
+        margin: 30px;
+    }
+    .delete-btn{
+        width: 20%;
+    height: 4vmax;
+    border: none;
+    font-size: 32px;
+    }
+}
